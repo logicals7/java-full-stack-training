@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- mix injection -->
+    
+    <bean id="emp1" class="com.spring.learn.EmployeeBean">
+    	<property name="empId" value="101"/>
+    	<!--using the normal contrcutor-arg parameters-->
+    	<constructor-arg name="empName" value="Mark"/>
+    	<!--we can use type & value together and spring can automatically identify-->
+    	<constructor-arg type="java.lang.String" value="Developer"/>
+    	<!--we can use index and value & spring can find the order in which constructor parameters are defined-->
+    	<!--index here will be 2, because one field is defined as setter injection-->
+    	<constructor-arg index="2" value="45000"/>
+    </bean>
+    
+</beans>

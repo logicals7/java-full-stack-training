@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- constructor injection -->
+    
+    <bean id="emp1" class="com.spring.learn.EmployeeBean">
+    	<constructor-arg name="empId" value="101"/>
+    	<constructor-arg name="empName" value="Mark"/>
+    	<constructor-arg name="role" value="Developer"/>
+    	<constructor-arg name="salary" value="45000"/>
+    </bean>
+    
+    <bean id="emp2" class="com.spring.learn.EmployeeBean">
+    	<constructor-arg name="empId" value="102"/>
+    	<constructor-arg name="empName" value="Clark"/>
+    	<constructor-arg name="role" value="DevOps"/>
+    	<constructor-arg name="salary" value="55000"/>
+    </bean>
+    
+</beans>

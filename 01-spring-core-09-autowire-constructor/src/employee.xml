@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- autowiring constructor -->
+	<!-- bean id of injectable bean is optional -->
+	<!-- a constructor for the injectable bean should be avail in the main bean -->
+	<bean id="emp1" class="com.spring.learn.EmployeeBean" autowire="constructor">
+		<property name="empId" value="101"/>
+    	<property name="empName" value="Kirti"/>
+    	<property name="role" value="Devops"/>
+    	<property name="salary" value="450000"/>
+	</bean>
+	
+	
+	<!-- bean id of injectable bean is optional. You can give any id name like id="add1". it doesn't matter.-->
+	<bean id="add1" class="com.spring.learn.AddressBean">
+		<property name="area" value="Bada Bazaar"/>
+		<property name="city" value="Kanina"/>
+	</bean>
+	
+	
+	<!--If there are more than one bean of same type, and none of the bean has same id as address field in main bean.-->
+	<!--there will be null value in response, but no exception is thrown here.-->
+	<bean id="add2" class="com.spring.learn.AddressBean" primary="true" >
+		<property name="area" value="Lohad Bazaar"/>
+		<property name="city" value="Bhiwani"/>
+	</bean>
+	
+	<!-- Points:
+		- If we have zero bean for reference class-> Will get null values
+		  - If we have One bean for reference class-> Will get values
+		  - If we have more than one bean for reference class and non of the bean is 
+		    same as byName-> Will get exception -> Null values we did not get exception
+		  - how to resolve above one 
+		    we can use primary attribute to make one of the bean as primary= "true"
+		  - If we have more than one bean for reference class and any one of the bean is 
+		    same as byName->  Then it will be injecting the value ad byName
+			  In Constructor autowiring  
+			    will work as byType
+			    will work as byName 
+			    it will be depend on scenario 
+
+
+	-->
+	
+</beans>
+	

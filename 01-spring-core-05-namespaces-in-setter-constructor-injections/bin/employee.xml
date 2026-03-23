@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- namespace for setters -->
+	<bean id="emp1" class="com.spring.learn.EmployeeBean" p:empId="1001" p:empName="Krishan" p:role="Developer" p:salary="4500000"/>
+	<!-- namespace for constructor -->
+	<bean id="emp2" class="com.spring.learn.EmployeeBean" c:empId="1002" c:empName="Nandini" c:role="Finance" c:salary="500000"/>
+
+</beans>
+	

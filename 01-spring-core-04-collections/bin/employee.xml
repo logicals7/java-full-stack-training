@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- collection injection -->
+    
+    <bean id="emp1" class="com.spring.learn.EmployeeBean">
+    
+    	<!-- list Injection -->
+        <property name="empList">
+            <list>
+                <value>Rahul</value>
+                <value>Amit</value>
+                <value>Sneha</value>
+            </list>
+        </property>
+
+        <!-- Set Injection -->
+        <property name="empSet">
+            <set>
+                <value>Rahul</value>
+                <value>Rahul</value>
+                <value>Sneha</value>
+            </set>
+        </property>
+
+        <!-- Map Injection -->
+        <property name="empMap">
+            <map>
+                <entry key="101" value="Rahul"/>
+                <entry key="102" value="Amit"/>
+                <entry key="103" value="Sneha"/>
+            </map>
+        </property>
+    </bean>
+    
+    
+</beans>
