@@ -21,5 +21,12 @@
 		<property name="city" value="Kanina"/>
 	</bean>
 	
+	<!-- Points:
+		- If we have zero bean for reference class-> Will get null values
+		- If we have One bean for reference class-> Will get values
+		- If we have more than one bean for reference class and no one of bean is match -> Will get null values
+  		- If we have more than one bean for reference class and any one of bean is match -> Will get match values
+	-->
+	
 </beans>
 	

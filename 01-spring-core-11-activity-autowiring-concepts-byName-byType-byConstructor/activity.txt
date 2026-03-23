@@ -1,0 +1,3 @@
+Activity
+===================
+Create A Java Project with Student Details and Address   Student{     stuId, stuName; stuDept,      Address add;   }    Apply the Auto wiring concept byName, byType, constructor one by one
