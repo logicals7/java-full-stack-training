@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Lazy Loading:
+    	- If we run the application without defining the lazy-init attribute, it will print the "Employee" string 3 times due to default constructor
+    	invokation & eager loading.
+    	- when we define it as lazy, then it will print Employee only two times.
+    	- lazy bean is created only when it's object is required
+    -->
+    
+    <bean id="emp1" class="com.spring.learn.EmployeeBean" lazy-init="true">
+    	<property name="empId" value="101"/>
+    	<property name="empName" value="Mark"/>
+    	<property name="role" value="Developer"/>
+    	<property name="salary" value="45000"/>
+    </bean>
+    
+    <bean id="emp2" class="com.spring.learn.EmployeeBean">
+    	<property name="empId" value="102"/>
+    	<property name="empName" value="Clark"/>
+    	<property name="role" value="DevOps"/>
+    	<property name="salary" value="55000"/>
+    </bean>
+    
+    <bean id="emp3" class="com.spring.learn.EmployeeBean">
+    	<property name="empId" value="102"/>
+    	<property name="empName" value="Clark"/>
+    	<property name="role" value="DevOps"/>
+    	<property name="salary" value="55000"/>
+    </bean>
+    
+</beans>

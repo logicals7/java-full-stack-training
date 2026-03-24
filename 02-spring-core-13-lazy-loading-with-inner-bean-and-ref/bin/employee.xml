@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Lazy Loading with inner bean and ref:
+    	- addressBean inside emp1-lazy-bean, & we call the object emp1 => Bean created: Employee, Address
+    	- addressBean inside emp1-lazy-bean, & we dont call the object => Bean created: None
+    	
+    	- addressBean inside emp1-leazy-bean & emp2, & we dont call the object => Bean created: Employee
+    	- addressBean inside emp1-leazy-bean & emp2-lazy-bean, & we call the object of emp1 & emp2 => Bean created: None
+    	- addressBean inside emp1-leazy-bean & address-lazy-bean ref inside emp2-non-lazy, & we dont call the object => Bean created: Employee, Address
+    -->
+    
+    <!--inner bean-->
+    <bean id="emp1" class="com.spring.learn.EmployeeBean" lazy-init="true">
+    	<property name="empId" value="101"/>
+    	<property name="empName" value="Mark"/>
+    	<property name="role" value="Developer"/>
+    	<property name="salary" value="45000"/>
+    	<property name="address"> 
+			<bean class="com.spring.learn.AddressBean">
+				<property name="area" value="Lohad Bazaar"/>
+				<property name="city" value="Bhiwani"/>
+			</bean>
+		</property>
+    </bean>
+    
+    <bean id="emp2" class="com.spring.learn.EmployeeBean">
+    	<property name="empId" value="102"/>
+    	<property name="empName" value="Clark"/>
+    	<property name="role" value="DevOps"/>
+    	<property name="salary" value="55000"/>
+    	<property name="address" ref="address"></property>
+    </bean>
+    
+    <bean id="address" class="com.spring.learn.AddressBean" lazy-init="true">
+    	<property name="area" value="AECS"></property>
+    	<property name="city" value="BLR"></property>
+    </bean>
+    
+  
+    
+</beans>

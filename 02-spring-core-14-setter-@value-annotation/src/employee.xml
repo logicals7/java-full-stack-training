@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        ">
+
+    <!-- @Value Annotation :
+    - will be use on bean class variable
+	  - to provide the value
+	  - <property/> tag replace with @Value
+	  - We can write on setter method also
+	  - @Value will take as String parameter
+	  - we can expect dynamic value, arithmetic calculation
+	  If we run the application then we will get null values for bean object
+	  - because we did not have any property 
+	  - so, here we must tell our container to read value from bean class 
+	  - we should add <context/> namespace and schema
+	  - will be scanning the package
+	<context:component-scan base-package=“com.spring.learn”/>
+	
+	to add this: we need to add the following lines:
+	-  xmlns:context="http://www.springframework.org/schema/context"
+	- in xsi:schemaLocation:  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    
+    -->
+    
+    
+    <!--@Value:
+    	- we can add @value on both fields & setters as well.
+    	- if defined on both the setters will have higher priority
+    -->
+    
+    
+    <!--will scan the package for required values
+    After adding these you will not get null values-->
+    
+	<context:component-scan base-package="com.spring.learn"/>
+    
+    <bean id="emp1" class="com.spring.learn.EmployeeBean">
+    	<!--will replace with @value annotation inside bean class-->
+    	<!--<property name="empId" value="101"/>
+    	<property name="empName" value="Mark"/>
+    	<property name="role" value="Developer"/>
+    	<property name="salary" value="45000"/>-->
+    </bean>
+    
+    
+</beans>

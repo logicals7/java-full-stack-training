@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- autowire by name -->
+	<!-- bean id of injectable bean should match to the actual variable name in main bean class -->
+	<bean id="stu1" class="com.spring.learn.StudentBean" autowire="byName">
+		<property name="stuId" value="101"/>
+    	<property name="stuName" value="Nands"/>
+    	<property name="stuDept" value="iot"/>
+	</bean>
+	
+	<!-- imp: bean id of injectable bean is matching to address variable-->
+	<bean id="address" class="com.spring.learn.Address">
+		<property name="area" value="Bada Bazaar"/>
+		<property name="city" value="Kanina"/>
+	</bean>
+	
+	
+	<!-- autowire by type -->
+	<!-- bean id of injectable bean is optional -->
+	<bean id="stu2" class="com.spring.learn.StudentBean" autowire="byType">
+		<property name="stuId" value="102"/>
+    	<property name="stuName" value="KK"/>
+    	<property name="stuDept" value="iot"/>
+	</bean>
+	
+	<!-- autowire by constructor -->
+	<!-- bean id of injectable bean is optional -->
+	<bean id="stu3" class="com.spring.learn.StudentBean" autowire="constructor">
+		<property name="stuId" value="102"/>
+    	<property name="stuName" value="KK"/>
+    	<property name="stuDept" value="iot"/>
+	</bean>
+	
+	
+	
+</beans>
+	
