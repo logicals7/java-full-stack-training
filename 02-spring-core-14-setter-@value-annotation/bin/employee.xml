@@ -20,6 +20,7 @@
 	  - we should add <context/> namespace and schema
 	  - will be scanning the package
 	<context:component-scan base-package=“com.spring.learn”/>
+	- we can use the arithmetic operations in value: @Value("#{10+20}")
 	
 	to add this: we need to add the following lines:
 	-  xmlns:context="http://www.springframework.org/schema/context"
@@ -31,6 +32,19 @@
     <!--@Value:
     	- we can add @value on both fields & setters as well.
     	- if defined on both the setters will have higher priority
+    	
+    	####### Best way:
+	Passing the value in @Value annotation is like fixing the value, But we want it to be dynamic: 		- Can we read the value from properties file/external file?
+			- we should use : ${}
+			- We can pass the value inside the property file
+			- Inside the file we can directly write values: name=Kirti
+			- we need to mention the location of the property file in xml using:
+				<context:property-placeholder location="employee.properties"/>
+			
+			
+			
+			//@Value("101") 			//@Value("101")   			//@Value("#{20*10}")// Bad Practice   			@Value("${id}")   			private Integer empId;   			//@Value("Mark")   			@Value("${name}")
+			
     -->
     
     
@@ -38,6 +52,7 @@
     After adding these you will not get null values-->
     
 	<context:component-scan base-package="com.spring.learn"/>
+	<context:property-placeholder location="employee.properties"/>
     
     <bean id="emp1" class="com.spring.learn.EmployeeBean">
     	<!--will replace with @value annotation inside bean class-->

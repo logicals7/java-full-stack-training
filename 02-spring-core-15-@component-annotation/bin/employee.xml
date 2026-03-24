@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        ">
+
+    <!-- @Component Annotation:
+    	- Will register the POJO class as a bean. no need to define it in xml. hence replaces <bean> tag.
+    	-- Annotation will be use on bean class/ class level 
+		  - to manage spring bean
+		  - <bean id="" class=""> will replace with @Component
+		  - <context:component-scan base-package="com.acn.ltt"/>
+		  - Component annotation is stereo type annotation
+		
+		  - we are providing the @component value to inject inside the main class
+		  - if we did not pass value inside component annotation
+		  - will take default as class name
+		  - but it must start with lower case - employeeBean
+    -->
+    
+    <!-- scans the package & identifies the stereotype annotations -->
+	<context:component-scan base-package="com.spring.learn"/>
+	<!-- provides the location of the properties files for @value("$name") -->
+	<context:property-placeholder location="employee.properties"/>
+    
+    <!-- @Component will replace the <bean> tag. Will be on bean class level-->
+    
+    <!--<bean id="emp1" class="com.spring.learn.EmployeeBean">
+    	will replace with @value annotation inside bean class
+    	<property name="empId" value="101"/>
+    	<property name="empName" value="Mark"/>
+    	<property name="role" value="Developer"/>
+    	<property name="salary" value="45000"/>
+    </bean>-->
+    
+    
+</beans>

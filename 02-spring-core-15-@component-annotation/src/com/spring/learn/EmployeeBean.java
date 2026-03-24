@@ -1,20 +1,20 @@
 package com.spring.learn;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+
+@Component("emp1")
 public class EmployeeBean {
 	
-	//setting the value by variable but will be overridden by setter @Value
 	@Value("101")
 	private Integer empId;
 	
-	//setting the values from properties file
 	@Value("${name}")
 	private String empName;
 	@Value("${role}")
 	private String role;
 	
-	//setting the value by variable
 	@Value("5000000")
 	private Double salary;
 	
@@ -23,8 +23,6 @@ public class EmployeeBean {
 		return empId;
 	}
 	
-	//setter value will have higher priority over fields
-	@Value("102") 
 	public void setEmpId(Integer empId) {
 		this.empId = empId;
 	}
@@ -49,8 +47,6 @@ public class EmployeeBean {
 		return salary;
 	}
 	
-	//arithmetic operations are allowed
-	@Value("#{5000000+200000}")
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
