@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>02-spring-core-14-setter-@value-annotation</name>
+	<name>02-spring-core-19-activity-@value-@component-@autowired-@qualifier-@profile-annotations</name>
 	<comment></comment>
 	<projects>
 	</projects>

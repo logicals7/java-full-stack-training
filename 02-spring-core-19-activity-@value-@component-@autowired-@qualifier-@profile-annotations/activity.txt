@@ -1,0 +1,9 @@
+Activity
+===================
+Create A Java Project with Student Details and Address
+  Student{
+    stuId, stuName; stuDept, 
+    Address add;
+  }
+ 
+  Apply all annotation(@Value, @Component, @Autowired, @Profile) one by one

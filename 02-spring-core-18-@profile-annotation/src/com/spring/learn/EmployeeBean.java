@@ -21,6 +21,8 @@ import org.springframework.stereotype.Component;
 	    Run as configuration-> environment-> new -> 
 	    spring.profiles.active
 	    value= dev
+	
+	=> now it should run fine.
  */
 
 @Profile("dev")

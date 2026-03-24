@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>02-spring-core-17-autowired-and-qualifier-annotation</name>
+	<name>02-spring-core-16-@autowired-annotation</name>
 	<comment></comment>
 	<projects>
 	</projects>
