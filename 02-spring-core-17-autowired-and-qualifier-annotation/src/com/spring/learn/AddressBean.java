@@ -3,9 +3,6 @@ package com.spring.learn;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-//if @Autowired(required=false) & we dont mention this class as bean/component => we will get null values for address injection
-//if @Autowired(required=true) or @Autowired & we dont mention this class as bean/component => we will get bean not found exception
-//if @Autowired(required=false) & we mention this class as bean/component => we will get values for address injection
 @Component("add2")
 public class AddressBean {
 	

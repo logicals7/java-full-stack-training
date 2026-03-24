@@ -1,5 +1,6 @@
 package com.spring.learn;
 
+
 public class AddressBean {
 	private String area;
 	private String city;
