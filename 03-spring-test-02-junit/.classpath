@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-expression-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-core-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-context-support-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-context-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-beans-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-aop-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
