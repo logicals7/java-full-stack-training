@@ -6,6 +6,27 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
+/*
+Unit Testing:
+	- Done using JUnit framework in Java
+	- We will be using JUnit 4 with Spring version 4
+	- Junit will be provided by default in Eclipse
+	- Right click src folder > New > Source Folder > name it as test > create new Junit class using option given by Eclipse.
+	- What will be difference between normal Java class & Junit class?
+	- In Junit class, there should be at least one method with @Test annotation.
+	- A normal Java class can’t be run until and unless it has main() method. It can only be compiled. But a Junit class can be run by right click > run unit test.
+
+
+Problem with Junit:
+	- Till now, we ain’t doing any transactions.
+	- Our normal Junit doesn’t support any transactions like commit or rollback.
+	- When we write test cases, we should not write the actual data. It should be taken the rollback operation.
+	- So we will use Spring Test module instead of Unit.
+	- What will Spring Test module do? - It will initially just load the file.
+
+*/
+
 public class EmployeeTest {
 	
 	/*

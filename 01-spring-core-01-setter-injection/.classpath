@@ -6,12 +6,39 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-expression-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-core-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-context-support-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-context-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-beans-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/spring-aop-5.3.22.jar"/>
-	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/Java-Full-Stack-Training/00-spring-core-jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-expression-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-core-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-context-support-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-context-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-beans-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/spring-aop-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/01-spring-core-jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/02-spring-test-jars/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/02-spring-test-jars/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/02-spring-test-jars/spring-test-5.3.22.jar"/>
+	<classpathentry kind="lib" path="/Users/motocycopath/Desktop/java-full-stack-training/00-spring-core-jars/02-spring-test-jars/junit-4.13.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-02-constructor-injection"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-03-mix-injection"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-04-collections"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-06-inner-bean-and-ref"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-07-autowire-byName"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-08-autowire-byType"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-09-autowire-constructor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-10-bean-scope"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/01-spring-core-11-activity-autowiring-concepts-byName-byType-byConstructor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-12-lazy-loading"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-13-lazy-loading-with-inner-bean-and-ref"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-14-@value-annotation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-15-@component-annotation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-16-@autowired-annotation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-17-@autowired-and-@qualifier-annotation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-18-@profile-annotation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-19-activity-@value-@component-@autowired-@qualifier-@profile-annotations"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-20-@configuration-and-@bean-annotations-and-javaConfigClass"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-21-@componentScan-annotation-and-javaConfigClass"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/02-spring-core-22-bean-life-cycle-and-methods"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/03-spring-test-01-junit-write-your-first-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/03-spring-test-02-junit-employeeBeanTest"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/03-spring-test-03-junit"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
