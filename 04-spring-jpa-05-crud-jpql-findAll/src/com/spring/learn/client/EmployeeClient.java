@@ -3,8 +3,11 @@ package com.spring.learn.client;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import com.spring.learn.entity.EmployeeEntity;
+
+import java.util.List;
 
 
 /*
@@ -52,8 +55,21 @@ public class EmployeeClient {
 		//insertEmployee();
 		//mergeOperation();
 		//findEmployee();
-		removeEmployee();
+		//removeEmployee();
+		findAllEmployees();
 	}
+
+	private static void findAllEmployees() {
+		//This method will return the Query Interface. To know you should hover on it.
+		//so we will assign it to a variable of Query type.
+		Query query = em.createQuery("select e from EmployeeEntity e");
+		//This will return the List. To know you should hover on it.
+		//so we will assign it to a variable of List type.
+		List<EmployeeEntity> allEmployees = query.getResultList();
+		//print each employee
+		allEmployees.forEach(System.out::println);
+	}
+
 
 	private static void removeEmployee() {
 		EmployeeEntity entity = em.find(EmployeeEntity.class, 2);
