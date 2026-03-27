@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="test">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../00-spring-jars/02-spring-test-jars/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../00-spring-jars/02-spring-test-jars/jsr250-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../00-spring-jars/02-spring-test-jars/spring-test-5.3.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../00-spring-jars/02-spring-test-jars/junit-4.13.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

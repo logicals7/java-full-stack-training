@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spring test">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/00-spring-jars/02-spring-test-jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/00-spring-jars/02-spring-test-jars" recursive="false" />
+  </library>
+</component>

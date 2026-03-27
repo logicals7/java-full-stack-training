@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b08deb58-3fa0-4285-a16f-a8e0da9432be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/java-full-stack-training.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/spring_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/spring_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/spring_test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/bin/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/bin/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/bin/com/spring/learn/client/EmployeeClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/bin/com/spring/learn/client/EmployeeClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/bin/com/spring/learn/entity/EmployeeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/bin/com/spring/learn/entity/EmployeeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/src/com/spring/learn/client/EmployeeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/src/com/spring/learn/client/EmployeeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-spring-test-04-jpa-crud/src/com/spring/learn/entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-jpa-01-crud-insert-merge/src/com/spring/learn/entity/EmployeeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-day3.pages" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-day3.pages" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3BXCWUnzieG9uwf7mv8bunwLIx5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EmployeeClient.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/motocycopath/Desktop/java-full-stack-training/04-spring-jpa-02-crud-find copy",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="EmployeeClient" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.learn.client.EmployeeClient" />
+      <module name="04-spring-jpa-02-crud-find copy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.learn.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="com.spring.learn.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="04-spring-jpa-02-crud-find" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EmployeeClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b08deb58-3fa0-4285-a16f-a8e0da9432be" name="Changes" comment="" />
+      <created>1774626059499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774626059499</updated>
+    </task>
+    <servers />
+  </component>
+</project>
