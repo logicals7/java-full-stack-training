@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/05-microservices-spring-rest" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/05-microservices-spring-rest" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/01-spring-core-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/01-spring-core-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/02-spring-test-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/02-spring-test-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/03-spring-jpa-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/03-spring-jpa-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/04-spring-data-jpa-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/04-spring-data-jpa-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/05-microservices-spring-rest" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/05-microservices-spring-rest" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/01-spring-core-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/01-spring-core-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/02-spring-test-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/02-spring-test-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/03-spring-jpa-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/03-spring-jpa-jars" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../00-spring-jars/04-spring-data-jpa-jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../00-spring-jars/04-spring-data-jpa-jars" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

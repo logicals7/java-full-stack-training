@@ -1,0 +1,10 @@
+127.0.0.1 - - [31/Mar/2026:01:36:08 +0530] "POST /employee-service/addEmployee HTTP/1.1" 201 25
+127.0.0.1 - - [31/Mar/2026:01:42:44 +0530] "GET /employee-service/findEmployeeById/1 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2026:01:44:19 +0530] "GET /employee-service/findEmployeeById/1 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2026:01:44:25 +0530] "GET /employee-service/findEmployeeById/1 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2026:01:44:29 +0530] "GET /employee-service/findEmployeeById/2 HTTP/1.1" 200 82
+127.0.0.1 - - [31/Mar/2026:01:44:45 +0530] "GET /employee-service/findEmployeeById/2 HTTP/1.1" 200 82
+127.0.0.1 - - [31/Mar/2026:01:47:53 +0530] "GET /employee-service/findAllEmployees HTTP/1.1" 200 297
+127.0.0.1 - - [31/Mar/2026:01:52:24 +0530] "PUT /employee-service/updateEmployee HTTP/1.1" 500 3615
+127.0.0.1 - - [31/Mar/2026:01:52:42 +0530] "PUT /employee-service/updateEmployee HTTP/1.1" 302 73
+127.0.0.1 - - [31/Mar/2026:01:54:41 +0530] "DELETE /employee-service/deleteEmployee/5 HTTP/1.1" 302 76
