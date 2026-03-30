@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spring-data-jpa-jars">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../00-spring-jars/04-spring-data-jpa-jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../00-spring-jars/04-spring-data-jpa-jars" recursive="false" />
+  </library>
+</component>
