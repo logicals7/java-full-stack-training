@@ -1,0 +1,5 @@
+com.microservices.learn.controller.EmployeeController=org.springframework.stereotype.Component
+com.microservices.learn.dao.EmployeeDAO=org.springframework.data.repository.Repository
+com.microservices.learn.dao.EmployeeDAOWrapper=org.springframework.stereotype.Component
+com.microservices.learn.entity.EmployeeEntity=javax.persistence.Entity,javax.persistence.Table
+com.microservices.learn.service.EmployeeServiceImpl=org.springframework.stereotype.Component
