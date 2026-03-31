@@ -11,4 +11,5 @@ public interface EmployeeService {
     public EmployeeBean updateEmployee(EmployeeBean employeeBean);
     public EmployeeBean deleteEmployee(Integer id);
     public List<EmployeeBean> findEmployeeBySalaryGreaterThan(Double salary);
+    public Integer updateEmployeeSalaryByName(Double salary, String empName);
 }

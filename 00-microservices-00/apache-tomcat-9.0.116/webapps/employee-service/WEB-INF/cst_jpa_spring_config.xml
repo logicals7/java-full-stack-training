@@ -48,6 +48,13 @@
 
         <property name="packagesToScan" value="com.microservices.learn.entity"/>
 
+        <property name="mappingResources">
+            <list>
+                <value>orm.xml</value>
+            </list>
+        </property>
+
+
     </bean>
 
     <!-- Transaction Manager -->
@@ -60,5 +67,6 @@
             entity-manager-factory-ref="entityManagerFactory"
             transaction-manager-ref="txManager"
     />
+
 
 </beans>

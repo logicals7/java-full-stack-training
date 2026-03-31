@@ -77,5 +77,9 @@ public class EmployeeDAOWrapper {
         }
         return employeeBeanList;
     }
+
+    public Integer updateEmployeeSalaryByName(Double salary, String empName){
+        return employeeDAO.updateEmployeeSalaryByName(salary, empName);
+    }
 }
  

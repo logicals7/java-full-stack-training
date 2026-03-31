@@ -4,6 +4,7 @@ import com.microservices.learn.bean.EmployeeBean;
 import com.microservices.learn.dao.EmployeeDAOWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
@@ -42,5 +43,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeBean> findEmployeeBySalaryGreaterThan(Double salary) {
         return employeeDAOWrapper.findEmployeeBySalaryGreaterThan(salary);
+    }
+
+    @Override
+    public Integer updateEmployeeSalaryByName(Double salary, String empName) {
+        return employeeDAOWrapper.updateEmployeeSalaryByName(salary, empName);
     }
 }

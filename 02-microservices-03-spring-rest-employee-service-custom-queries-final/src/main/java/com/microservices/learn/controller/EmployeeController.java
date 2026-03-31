@@ -58,4 +58,13 @@ public class EmployeeController {
         List<EmployeeBean> employeeBeanList = employeeService.findEmployeeBySalaryGreaterThan(salary);
         return new ResponseEntity<List<EmployeeBean>>(employeeBeanList, HttpStatus.OK);
     }
+
+    @GetMapping("/updateEmployeeSalaryByName/{salary}/{empName}")
+    public ResponseEntity<String> updateEmployeeSalaryByName(@PathVariable("salary") Double salary, @PathVariable("empName") String empName){
+        Integer rowsAffected = employeeService.updateEmployeeSalaryByName(salary, empName);
+        if (rowsAffected == 0){
+            return new ResponseEntity<String>("No employee record found with name: " + empName, HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<String>("Employee salary updated for empployee with name: " + empName, HttpStatus.OK);
+    }
 }

@@ -29,3 +29,4 @@
 0:0:0:0:0:0:0:1 - - [31/Mar/2026:22:18:16 +0530] "GET /employee-service/findEmployeeBySalaryGreaterThan/2 HTTP/1.1" 404 810
 0:0:0:0:0:0:0:1 - - [31/Mar/2026:22:18:16 +0530] "GET /employee-service/findEmployeeBySalaryGreaterThan/2 HTTP/1.1" 404 810
 0:0:0:0:0:0:0:1 - - [31/Mar/2026:22:22:12 +0530] "GET /employee-service/findEmployeeBySalaryGreaterThan/2 HTTP/1.1" 200 219
+0:0:0:0:0:0:0:1 - - [31/Mar/2026:22:40:58 +0530] "GET /employee-service/findEmployeeBySalaryGreaterThan/2 HTTP/1.1" 200 219

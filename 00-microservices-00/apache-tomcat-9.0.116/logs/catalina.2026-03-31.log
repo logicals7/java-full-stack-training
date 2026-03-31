@@ -1538,3 +1538,75 @@
 31-Mar-2026 22:22:00.032 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 31-Mar-2026 22:22:00.042 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5865] milliseconds
 31-Mar-2026 22:22:11.728 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+31-Mar-2026 22:40:38.700 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+31-Mar-2026 22:40:38.713 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Mar-2026 22:40:38.727 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Mar-2026 22:40:38.821 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy Closing JPA EntityManagerFactory for persistence unit 'default'
+31-Mar-2026 22:40:38.834 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [employee-service] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Mar-2026 22:40:38.837 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [employee-service] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+31-Mar-2026 22:40:39.044 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Mar-2026 22:40:39.065 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Mar-2026 22:40:45.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.116
+31-Mar-2026 22:40:45.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 16 2026 15:05:42 UTC
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.116.0
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.5
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_482-b08
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Temurin
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116
+31-Mar-2026 22:40:45.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/conf/logging.properties
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+31-Mar-2026 22:40:45.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+31-Mar-2026 22:40:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+31-Mar-2026 22:40:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116
+31-Mar-2026 22:40:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116
+31-Mar-2026 22:40:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/temp
+31-Mar-2026 22:40:45.641 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/motocycopath/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+31-Mar-2026 22:40:46.089 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Mar-2026 22:40:46.126 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [667] milliseconds
+31-Mar-2026 22:40:46.216 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Mar-2026 22:40:46.216 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.116]
+31-Mar-2026 22:40:46.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/employee-service]
+31-Mar-2026 22:40:47.770 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Mar-2026 22:40:47.803 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Mar-2026 22:40:48.297 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+31-Mar-2026 22:40:48.406 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
+31-Mar-2026 22:40:48.409 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+31-Mar-2026 22:40:48.417 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+31-Mar-2026 22:40:48.778 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+31-Mar-2026 22:40:48.859 INFO [main] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.2.8.Final}
+31-Mar-2026 22:40:48.863 INFO [main] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+31-Mar-2026 22:40:48.904 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+31-Mar-2026 22:40:49.433 INFO [main] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+31-Mar-2026 22:40:50.056 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory Initialized JPA EntityManagerFactory for persistence unit 'default'
+31-Mar-2026 22:40:50.590 INFO [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+31-Mar-2026 22:40:50.808 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 3005 ms
+31-Mar-2026 22:40:50.853 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'cstspconf-web'
+31-Mar-2026 22:40:51.464 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 610 ms
+31-Mar-2026 22:40:51.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/employee-service] has finished in [5,281] ms
+31-Mar-2026 22:40:51.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/docs]
+31-Mar-2026 22:40:51.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/docs] has finished in [43] ms
+31-Mar-2026 22:40:51.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/manager]
+31-Mar-2026 22:40:51.578 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/manager] has finished in [30] ms
+31-Mar-2026 22:40:51.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/examples]
+31-Mar-2026 22:40:51.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/examples] has finished in [258] ms
+31-Mar-2026 22:40:51.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/ROOT]
+31-Mar-2026 22:40:51.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/ROOT] has finished in [24] ms
+31-Mar-2026 22:40:51.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/host-manager]
+31-Mar-2026 22:40:51.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/motocycopath/Desktop/java-full-stack-training/00-microservices-00/apache-tomcat-9.0.116/webapps/host-manager] has finished in [28] ms
+31-Mar-2026 22:40:51.892 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Mar-2026 22:40:51.903 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5776] milliseconds
