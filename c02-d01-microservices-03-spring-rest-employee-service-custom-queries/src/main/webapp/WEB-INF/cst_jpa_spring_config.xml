@@ -46,7 +46,7 @@
             </bean>
         </property>
 
-        
+
 
         <property name="packagesToScan" value="com.microservices.learn.entity"/>
 
