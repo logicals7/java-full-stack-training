@@ -73,7 +73,7 @@ public class EmployeeDAOWrapper {
 
     //finds employee by name
     public List<EmployeeBean> findEmployeeByName(String name){
-        List<EmployeeEntity> employeeEntityList = employeeDAO.findByEmployeeName(name);
+        List<EmployeeEntity> employeeEntityList = employeeDAO.findByName(name);
         List<EmployeeBean> employeeBeanList = new ArrayList<>();
         for (EmployeeEntity ee : employeeEntityList){
             EmployeeBean eb = convertEntityToBean(ee);

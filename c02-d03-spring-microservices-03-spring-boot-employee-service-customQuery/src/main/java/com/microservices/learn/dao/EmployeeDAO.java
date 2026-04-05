@@ -2,6 +2,7 @@ package com.microservices.learn.dao;
 
 import com.microservices.learn.entity.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
@@ -17,5 +18,12 @@ public interface EmployeeDAO extends JpaRepository<EmployeeEntity, Integer> {
     //find all employees whose name is "Nands"
 
     //1st approach:
+    //Where Query methods are defined in a particular naming style
+    // so that hibernate can tokenize and break them into query
     public List<EmployeeEntity> findByEmployeeName(String employeeName);
+
+    //2nd approach:
+    //@Query Annotation with query: select k from EmployeeEntity where k.employeeName=?1
+    @Query("select k from EmployeeEntity k where k.employeeName=?1")
+    public List<EmployeeEntity> findByName(String employeeName);
 }

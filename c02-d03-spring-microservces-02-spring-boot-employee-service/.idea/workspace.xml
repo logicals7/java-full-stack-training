@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42b75991-2c64-4cc3-aa0e-3c4f50f944f0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/src/main/java/com/microservices/learn/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c02-d03-microservices-01-spring-boot-changeTomcat-DefaultServer-projectStructure/src/test/java/com/microservices/learn/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes-c02-d02-spring-01-customQueries-projectStructure.pages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes-c02-d03-spring-boot-01-serverSetUp-microservices-customQueries.pages" beforeDir="false" afterPath="$PROJECT_DIR$/../notes-c02-d03-spring-boot-01-serverSetUp-microservices-customQueries.pages" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="17" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3BuHaeCuRGYzsJVVbTB9GsXomA5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "695",
+    "RequestMappingsPanelWidth1": "694",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.C02D03SpringMicroservces02SpringBootEmployeeServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/motocycopath/Desktop/java-full-stack-training/c02-d03-spring-microservces-02-spring-boot-employee-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2862069",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <setting name="addClasspath" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C02D03SpringMicroservces02SpringBootEmployeeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="c02-d03-spring-microservices-02-spring-boot-employee-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.learn.C02D03SpringMicroservces02SpringBootEmployeeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="c02-d03-spring-microservices-02-spring-boot-employee-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.learn.EmployeeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.C02D03SpringMicroservces02SpringBootEmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42b75991-2c64-4cc3-aa0e-3c4f50f944f0" name="Changes" comment="" />
+      <created>1775332104393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775332104393</updated>
+      <workItem from="1775332105438" duration="1721000" />
+      <workItem from="1775335725181" duration="86000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
