@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="05-microservices-spring-rest">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../c00-d00-spring-jars/05-microservices-spring-rest" />
+      <root url="file://$PROJECT_DIR$/../c00-d00-spring-jars/01-spring-core-jars" />
+      <root url="file://$PROJECT_DIR$/../c00-d00-spring-jars/02-spring-test-jars" />
+      <root url="file://$PROJECT_DIR$/../c00-d00-spring-jars/03-spring-jpa-jars" />
+      <root url="file://$PROJECT_DIR$/../c00-d00-spring-jars/04-spring-data-jpa-jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../c00-d00-spring-jars/01-spring-core-jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../c00-d00-spring-jars/02-spring-test-jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../c00-d00-spring-jars/03-spring-jpa-jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../c00-d00-spring-jars/04-spring-data-jpa-jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../c00-d00-spring-jars/05-microservices-spring-rest" recursive="false" />
+  </library>
+</component>

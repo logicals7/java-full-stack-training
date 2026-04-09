@@ -13,7 +13,7 @@
 
     <!--metadata-->
     <groupId>com.microservices.learn</groupId>
-    <artifactId>c02-d04-spring-microservices-04-spring-boot-employee-service-customQueriesContinued</artifactId>
+    <artifactId>c02-d04-spring-microservices-05-spring-boot-employee-service-customQueryContinued-modificationQuery-deleteEmployeeByName-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>c02-d03-spring-microservces-02-spring-boot-employee-service</name>
     <description>c02-d03-spring-microservces-02-spring-boot-employee-service</description>

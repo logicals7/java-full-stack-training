@@ -98,7 +98,7 @@ public class EmployeeDAOWrapper {
 
     private EmployeeEntity convertBeanToEntity(EmployeeBean employeeBean) {
         EmployeeEntity employeeEntity = new EmployeeEntity();
-        BeanUtils.copyProperties(employeeBean, employeeEntity);
+        BeanUtils.copyProperties(employeeBean, employeeEntity, "employeeId");
         return employeeEntity;
     }
 
