@@ -2,7 +2,9 @@ package com.microservices.learn.dao;
 
 import com.microservices.learn.entity.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -42,7 +44,11 @@ public interface EmployeeDAO extends JpaRepository<EmployeeEntity, Integer> {
     @Query(name = "EmployeeDAO.findEmpListByName")
     public List<EmployeeEntity> findEmpListByName(String employeeName);
 
-
+    //modification query
+    @Query(name = "EmployeeDAO.deleteByName")
+    @Transactional
+    @Modifying
+    public Integer deleteByName(String employeeName);
 
 
 }
