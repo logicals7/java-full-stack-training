@@ -5,20 +5,27 @@ import org.hibernate.validator.constraints.Range;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-public class EmployeeBean {
+public class Employee {
+
+    @NotEmpty(message = "{NotEmpty.employee.employeeName}")
+    private String employeeName;
 
     private Integer employeeId;
 
-    @NotEmpty(message = "{NotEmpty.employeeBean.employeeName}")
-    private String employeeName;
-
-    @Range(min = 30000, max=1000000, message = "{Range.employeeBean.salary}")
+    @Range(min = 30000, max=1000000, message = "{Range.employee.salary}")
     private Double salary;
 
-    @NotNull(message="{NotNull.employeeBean.departmentCode}")
-    private String departmentCode;
+    @NotNull(message="{NotNull.employee.departmentCode}")
+    private int departmentCode;
 
-    public EmployeeBean() {super();}
+    public Employee() {super();}
+
+    public Employee(String employeeName, Integer employeeId, Double salary, int departmentCode) {
+        this.employeeName = employeeName;
+        this.employeeId = employeeId;
+        this.salary = salary;
+        this.departmentCode = departmentCode;
+    }
 
     public Integer getEmployeeId() {
         return employeeId;
@@ -44,11 +51,11 @@ public class EmployeeBean {
         this.salary = salary;
     }
 
-    public String getDepartmentCode() {
+    public int getDepartmentCode() {
         return departmentCode;
     }
 
-    public void setDepartmentCode(String departmentCode) {
+    public void setDepartmentCode(int departmentCode) {
         this.departmentCode = departmentCode;
     }
 }
