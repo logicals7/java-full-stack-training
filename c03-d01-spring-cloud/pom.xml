@@ -49,7 +49,7 @@
 
         <dependency>
             <groupId></groupId>
-            <artifactId></artifactId>
+            <artifactId>ksis</artifactId>
         </dependency>
 
     </dependencies>
