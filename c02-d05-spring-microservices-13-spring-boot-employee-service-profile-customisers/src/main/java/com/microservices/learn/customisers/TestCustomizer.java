@@ -1,4 +1,4 @@
-package com.microservices.learn.customizer;
+package com.microservices.learn.customisers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,19 +8,19 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("prod_profile")
-public class ProdCustomizer implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
+@Profile("test_profile")
+public class TestCustomizer implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
 
-    private static Logger logger = LoggerFactory.getLogger(ProdCustomizer.class);
+    private static Logger logger = LoggerFactory.getLogger(TestCustomizer.class);
     static {
         logger.info("*****************************************");
-        logger.info("Created the Production URL Customizer");
+        logger.info("Created the Test URL Customizer");
         logger.info("*****************************************");
     }
 
     @Override
     public void customize(ConfigurableServletWebServerFactory factory) {
-        factory.setContextPath("/spring-boot-prod");
-        factory.setPort(8484);
+        factory.setContextPath("/spring-boot-test");
+        factory.setPort(8486);
     }
 }
