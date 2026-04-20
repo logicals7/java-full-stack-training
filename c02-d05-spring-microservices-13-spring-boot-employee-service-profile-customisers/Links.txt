@@ -1,0 +1,11 @@
+Run app twice in two terminals:
+
+1. Open Terminal A. cd to project root: cd /Users/motocycopath/Desktop/java-full-stack-training/c02-d05-spring-microservices-13-spring-boot-employee-service-profile-customisers
+2. Start PROD (terminal A): ./mvnw -Dspring-boot.run.profiles=prod_profile spring-boot:run — waits while app starts on port 8484 with context /spring-boot-prod.
+3. Open Terminal B (new window/tab). cd to same project folder.
+4. Start TEST (terminal B): ./mvnw -Dspring-boot.run.profiles=test_profile spring-boot:run — starts on port 8486 with context /spring-boot-test.
+5. Verify startup logs in each terminal (look for your static logger lines from Prod/Test DAO & Customizer).
+
+Use Postman:
+http://localhost:8484/spring-boot-prod/emp/controller/getDetails
+http://localhost:8486/spring-boot-test/emp/controller/getDetails

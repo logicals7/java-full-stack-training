@@ -7,6 +7,10 @@ public class EmployeeBean {
     private Double salary;
     private String departmentCode;
 
+    public EmployeeBean(){
+        super();
+    }
+
     public Integer getEmployeeId() {
         return employeeId;
     }

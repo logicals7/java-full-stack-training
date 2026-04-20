@@ -15,20 +15,16 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.stereotype.Repository;
 
 @Repository
 @Profile("prod_profile")
 public class EmployeeProdDAOImpl implements EmployeeDAO {
 
-    private static Logger logger = LoggerFactory.getLogger(EmployeeProdDAOImpl.class);
+    private static Logger logger = LoggerFactory.getLogger("EmployeeProdDAOImpl");
 
     static {
         logger.info("*****************************************");
-        logger.info("EmployeeProdDAOImpl class loaded: [Hitting DB to Perform CRUD Operations]");
+        logger.info("EmployeeProdDAOImpl class loaded: [Hitting DB to Perform CRUD Operations, this is for prod_profile]");
         logger.info("*****************************************");
     }
 
@@ -88,16 +84,6 @@ public class EmployeeProdDAOImpl implements EmployeeDAO {
         });
         return employeeBeanResult;
     }
-
-    @Repository
-    public interface EmployeeDBDao extends JpaRepository<EmployeeEntity, Integer> {
-
-        @Query("select e from EmployeeEntity e where e.employeeName=?1")
-        List<EmployeeEntity> findEmpListByName(String employeeName);
-
-        @Modifying
-        @Transactional
-        @Query("delete from EmployeeEntity e where e.employeeName=?1")
-        Integer deleteByName(String employeeName);
-    }
 }
+
+interface EmployeeDBDao extends JpaRepository<EmployeeEntity, Integer> { }
