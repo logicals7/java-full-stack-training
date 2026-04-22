@@ -1,0 +1,28 @@
+// use case1
+// perform GetAll operation multiple times
+// show the translated queries. For First Time query is created
+// tell them caches
+
+// use case2:
+// create a employee record, during creation we know it will be put up in the cache
+// so if we try to retrieve it then, it will be retrieved from the cache not from the DB
+// hence will not show any select query for select operation
+
+// use case3:
+// create a record, --Put up in cache
+// update a record, -- it will update the record in the cache as well when updated in DB
+// now fetch the single record, -- it will get the updated data from cache without
+// hitting the db and retrieving the same from cache...
+
+
+// usecase4:
+// getall the results from the Database
+// create one record and get details again and check.
+// you will not get the new record inserted.. as values are returned from cache not from DB, check console no SQL,
+// hence purge all the elements in the cache and fetch again
+// now you will see the elements getting fetched from Db and put up in the cache..
+// this also shows that the cacheable annotation will not the update the cache unlike the cacheput annotation,
+
+// usecase5:
+// evict annotation removes the data from cache on delete operations success
+// so that the cached result should not be returned.
