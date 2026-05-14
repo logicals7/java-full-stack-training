@@ -1,26 +1,32 @@
-package com.microservices.learn.bean;
+package com.microservices.learn.entity;
 
-public class EmployeeBean {
+import javax.persistence.*;
 
+@Entity
+@Table(name = "Employee")
+public class EmployeeEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer employeeId;
     private String employeeName;
-      Double salary;
+    private Double salary;
     private String departmentCode;
 
-    public EmployeeBean(Integer employeeId, String employeeName, Double salary, String departmentCode) {
+    public EmployeeEntity(Integer employeeId, String employeeName, Double salary, String departmentCode) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.salary = salary;
         this.departmentCode = departmentCode;
     }
 
-    public EmployeeBean() {
+    public EmployeeEntity(){
         super();
     }
 
     @Override
     public String toString() {
-        return "EmployeeBean{" +
+        return "EmployeeEntity{" +
                 "employeeId=" + employeeId +
                 ", employeeName='" + employeeName + '\'' +
                 ", salary=" + salary +

@@ -1,10 +1,14 @@
 package com.microservices.learn.bean;
 
-public class EmployeeBean {
+import java.io.Serializable;
+
+public class EmployeeBean implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Integer employeeId;
     private String employeeName;
-      Double salary;
+    Double salary;
     private String departmentCode;
 
     public EmployeeBean(Integer employeeId, String employeeName, Double salary, String departmentCode) {
