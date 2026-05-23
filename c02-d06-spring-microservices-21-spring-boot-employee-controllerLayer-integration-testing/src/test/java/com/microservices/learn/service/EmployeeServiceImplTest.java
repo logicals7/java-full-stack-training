@@ -154,5 +154,92 @@ public class EmployeeServiceImplTest {
         Assertions.assertTrue(foundEmployeeBeanList.size() >= 2);
     }
 
+    @Test
+    public void testFindEmployeeByIdInvalid(){
+        //Arrange: use an invalid employee id which should not exist in the DB.
+        Integer invalidEmployeeId = -1;
+
+        //Act
+        EmployeeBean foundEmployee = employeeService.findEmployeeById(invalidEmployeeId);
+
+        //Assert
+        Assertions.assertNull(foundEmployee);
+    }
+
+    @Test
+    public void testUpdateEmployee(){
+        //Arrange: create and save employee first, because update needs an existing employee id.
+        EmployeeBean employeeBean = new EmployeeBean();
+        employeeBean.setEmployeeName("KK");
+        employeeBean.setDepartmentCode(123);
+        employeeBean.setSalary(50000.00);
+
+        EmployeeBean savedEmployee = employeeService.addEmployee(employeeBean);
+
+        //Arrange: change values on the saved employee.
+        savedEmployee.setEmployeeName("KK Updated");
+        savedEmployee.setDepartmentCode(456);
+        savedEmployee.setSalary(60000.00);
+
+        //Act
+        EmployeeBean updatedEmployee = employeeService.updateEmployee(savedEmployee);
+
+        //Assert
+        Assertions.assertNotNull(updatedEmployee);
+        Assertions.assertEquals(savedEmployee.getEmployeeId(), updatedEmployee.getEmployeeId());
+        Assertions.assertEquals("KK Updated", updatedEmployee.getEmployeeName());
+        Assertions.assertEquals(456, updatedEmployee.getDepartmentCode());
+        Assertions.assertEquals(60000.00, updatedEmployee.getSalary());
+    }
+
+    @Test
+    public void testUpdateEmployeeInvalid(){
+        //Arrange: use an invalid employee id which should not exist in the DB.
+        EmployeeBean employeeBean = new EmployeeBean();
+        employeeBean.setEmployeeId(-1);
+        employeeBean.setEmployeeName("Invalid Employee");
+        employeeBean.setDepartmentCode(456);
+        employeeBean.setSalary(60000.00);
+
+        //Act
+        EmployeeBean updatedEmployee = employeeService.updateEmployee(employeeBean);
+
+        //Assert
+        Assertions.assertNull(updatedEmployee);
+    }
+
+    @Test
+    public void testDeleteEmployee(){
+        //Arrange: create and save employee first, because delete needs an existing employee id.
+        EmployeeBean employeeBean = new EmployeeBean();
+        employeeBean.setEmployeeName("KK");
+        employeeBean.setDepartmentCode(123);
+        employeeBean.setSalary(50000.00);
+
+        EmployeeBean savedEmployee = employeeService.addEmployee(employeeBean);
+
+        //Act
+        EmployeeBean deletedEmployee = employeeService.deleteEmployee(savedEmployee.getEmployeeId());
+
+        //Assert
+        Assertions.assertNotNull(deletedEmployee);
+        Assertions.assertEquals(savedEmployee.getEmployeeId(), deletedEmployee.getEmployeeId());
+        Assertions.assertEquals("KK", deletedEmployee.getEmployeeName());
+        Assertions.assertEquals(123, deletedEmployee.getDepartmentCode());
+        Assertions.assertEquals(50000.00, deletedEmployee.getSalary());
+    }
+
+    @Test
+    public void testDeleteEmployeeInvalid(){
+        //Arrange: use an invalid employee id which should not exist in the DB.
+        Integer invalidEmployeeId = -1;
+
+        //Act
+        EmployeeBean deletedEmployee = employeeService.deleteEmployee(invalidEmployeeId);
+
+        //Assert
+        Assertions.assertNull(deletedEmployee);
+    }
+
 
 }
