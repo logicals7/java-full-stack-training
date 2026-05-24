@@ -1,6 +1,6 @@
 package com.microservices.learn.service;
 
-import com.microservices.learn.C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer;
+import com.microservices.learn.C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer;
 import com.microservices.learn.bean.EmployeeBean;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -31,7 +31,7 @@ This means that this class will act as a config class to load the context.
 The imp thing is that - now the context will be cached for all test cases because of this annotation. All the test cases will have the same context.
 Recap: It is used to point to classes that contain the config for the Spring application context. By specifying class = C02D06SpringMicroservices20SpringBootEmployeeServiceTestingServiceLayerApplication.class, we are telling spring to use the configuration defined in the C02D06SpringMicroservices20SpringBootEmployeeServiceTestingServiceLayerApplication class to set up the application context for our tests. This allows us to load the necessary beans and configurations required for our test cases, ensuring that they run in an environment that closely resembles your actual application.
  */
-@SpringBootTest(classes = C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer.class)
+@SpringBootTest(classes = C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer.class)
 
 /*
 @Transactional annotation we will use to test the service layer.

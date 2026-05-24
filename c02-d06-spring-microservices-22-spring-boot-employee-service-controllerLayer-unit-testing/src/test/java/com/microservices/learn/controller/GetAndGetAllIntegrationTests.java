@@ -1,6 +1,6 @@
 package com.microservices.learn.controller;
 
-import com.microservices.learn.C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer;
+import com.microservices.learn.C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer;
 import com.microservices.learn.bean.EmployeeBean;
 import com.microservices.learn.web.custom.test.utils.JSONUtils;
 import org.junit.jupiter.api.Assertions;
@@ -37,7 +37,7 @@ It is a replacement of @Configuration annotation.
 Used to point to the files having the configuration and helps to load and start the context.
 Context will be cached for all test cases and classes.
  */
-@SpringBootTest(classes = C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer.class)
+@SpringBootTest(classes = C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer.class)
 
 /*
 Used to run each test case in an individual transaction.

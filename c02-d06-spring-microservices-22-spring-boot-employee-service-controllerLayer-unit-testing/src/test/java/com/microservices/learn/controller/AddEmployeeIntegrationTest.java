@@ -1,6 +1,6 @@
 package com.microservices.learn.controller;
 
-import com.microservices.learn.C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer;
+import com.microservices.learn.C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer;
 import com.microservices.learn.bean.EmployeeBean;
 import com.microservices.learn.web.custom.test.utils.JSONUtils;
 import org.junit.jupiter.api.Assertions;
@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(classes = C02D06SpringMicroservices21SpringBootEmployeeServiceIntegrationTestingOfControllerLayer.class)
+@SpringBootTest(classes = C02D06SpringMicroservices22SpringBootEmployeeServiceUnitTestingOfControllerLayer.class)
 @WebAppConfiguration
 @Transactional
 public class AddEmployeeIntegrationTest {
